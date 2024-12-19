@@ -1,0 +1,33 @@
+%--------------------------------------------------------------------------
+%Author: Huixiang Lin,Tao Liu
+%Date: 13/06/2023
+%--------------------------------------------------------------------------
+
+function [deconvoluted_wavefront,convolution_kernel]   = Deconvolution(original_wavefront,convolution_kernel,dp_amp,deconv_method,deconv_iterations,num_layers)
+    if mod(it,p.deconv_iter(1))      == 0
+        %
+    end
+    %-------------------------------------
+    %calculate original diffraction pattern
+    original_dp                     = gather(double(abs(original_wavefront).^2));
+    dp_measured                     = gather(double((dp_amp + eps).^2));
+    %-------------------------------------
+    %deconvolution
+    for it = 1:num_layers
+        %
+        switch deconv_method
+            case 'vwnr'
+                %
+            case 'lucy'
+                %
+            case 'combined'
+                fmcfw = abs(deconvwnr(dp_measured(:,:,num_layers),original_dp(:,:,num_layers)));
+                fmcfw(fmcfw<0) = 0;
+                fmcfw = fmcfw/sum(sum(fmcfw));
+                convolution_kernel = abs(deconvwl_tandem(dp_measured(:,:,num_layers),original_dp(:,:,num_layers),deconv_iterations,fmcfw));
+                convolution_kernel = gpuArray(single(convolution_kernel/sum(sum((convolution_kernel)))));
+                original_wavefront(:,:,num_layers) = ifft2(fft2(original_wavefront(:,:,num_layers).*fft2(convolution_kernel)));
+        end
+    end
+end
+

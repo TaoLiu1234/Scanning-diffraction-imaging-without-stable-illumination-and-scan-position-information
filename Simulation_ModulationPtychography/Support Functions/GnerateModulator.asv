@@ -1,0 +1,28 @@
+%--------------------------------------------------------------------------
+%Author: Taoliu
+%Date: 25/2/2023
+%--------------------------------------------------------------------------
+
+function [modulator]            = GnerateModulator(dps_amp, p)
+    switch p. method_gen_modulator
+        case 'load'
+            load(p. modulator_name);
+            modulator           = gather( eval(p. modulator_name));
+            %
+        case 'DirectDivide'
+            %\
+            temp_wf = ones(size(dps_amp));
+            modulator = ones(p. sz_fft);
+            for it = 1:p. modulator_calibration_iter
+                parfor it2 = 1:p. length(dps_amp)
+                    temp_wf(:,:,it2) = ifftshift(ifft2(dps_amp));
+                end
+                sum_wf = sum(temp_wf,3);we
+            end
+        case 'ePIE'
+            %
+        case 'PCA'
+            %
+    end
+end
+
