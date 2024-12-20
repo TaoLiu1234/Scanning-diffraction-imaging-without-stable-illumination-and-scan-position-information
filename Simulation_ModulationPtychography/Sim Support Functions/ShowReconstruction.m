@@ -1,6 +1,6 @@
 %--------------------------------------------------------------------------
-%Author: Fucai Zhang, Tao Liu
-%Date: 15/06/2015
+%Author: Tao Liu, Fucai Zhang
+%Date: 06/05/2023 15/06/2015
 %Note: call: handles      = ShowReconstruction(guess, title_string)
 % or handles         = ShowReconstruction(first_guess, second_guess, title_string)
 % show magnitude and phase of wavefront(s)
@@ -36,7 +36,7 @@ switch  no_subplot
          % modulus axes
         handles(2)   = imagesc(abs(first_guess),'Parent',subplot(121));
         colormap(gray)
-        title('Modulus');   axis image off;
+        title('Amplitude');   axis image off;
         
         % phase axes
         handles(3)   = imagesc(angle(first_guess),'Parent',subplot(122));
@@ -51,24 +51,24 @@ switch  no_subplot
         % first guess modulus axes
         handles(2)   = imagesc(abs(first_guess),'Parent',subplot(221));
         colormap(gray)
-        title('Probe_guess Amplitude');
+        title('Probe\_guess Amplitude');
         axis image off;
         
         %Reconstructed first guess phase axes
         handles(3)   = imagesc(angle(first_guess),'Parent',subplot(222));
-        title('Probe_guess Phase');
+        title('Probe\_guess Phase');
         axis image off;
         
         %Reconstructed second guess modulus axes
         handles(4)   = imagesc(abs(second_guess),'Parent',subplot(223));
         colormap gray;
-        title('Object_guess Amplitude');
+        title('Object\_guess Amplitude');
         axis image off;
         
        
         %Reconstructed second guess phase axes
         handles(5)   = imagesc(angle(second_guess),'Parent',subplot(224));
-        title('Object_guess Phase');
+        title('Object\_guess Phase');
         axis image off;
         drawnow;
 end

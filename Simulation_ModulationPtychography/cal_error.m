@@ -1,3 +1,7 @@
+%--------------------------------------------------------------------------
+%Author: Taoliu
+%Date: 6/3/2023
+%--------------------------------------------------------------------------
 function [total_error,mean_error,std_error] = cal_error(pos1,pos2)
             pos1.shiftx                 = pos1.shiftx - pos1.shiftx(1);
             pos1.shifty                 = pos1.shifty - pos1.shifty(1);

@@ -1,6 +1,6 @@
 %--------------------------------------------------------------------------
-%Author: Fucai Zhang, Tao Liu
-%Date: 28/1/2015
+%Author: Tao Liu, Fucai Zhang 
+%Date: 06/06/2023 28/1/2015
 %--------------------------------------------------------------------------
 function handles     = Display(mode, probe_guess, object_guess,modulator_guess, it,it_total,varargin)
 % Create the main display figure...

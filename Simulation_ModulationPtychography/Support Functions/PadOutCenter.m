@@ -1,4 +1,7 @@
-
+%--------------------------------------------------------------------------
+%Author: Fucai Zhang
+%Date: 16/4/2014
+%--------------------------------------------------------------------------
 function out= PadOutCenter(im_1, sz, val)
 % if im1 is larger than im2 then its centerl region is cut out, otherwise
 % im1 is returned intact.

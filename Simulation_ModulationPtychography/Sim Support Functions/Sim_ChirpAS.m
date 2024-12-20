@@ -1,6 +1,6 @@
 %--------------------------------------------------------------------------
-%Author: Fucai Zhang
-%Date: 15/06/2015
+%Author: Tao Liu, Fucai Zhang
+%Date: 22/05/2023 15/06/2015
 %--------------------------------------------------------------------------
 
 function [Chirp_forward,Chirp_backward] = ChirpAS(p,distance)

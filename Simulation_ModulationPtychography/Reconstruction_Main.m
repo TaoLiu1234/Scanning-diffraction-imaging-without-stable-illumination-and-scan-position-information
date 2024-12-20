@@ -1,8 +1,15 @@
 %--------------------------------------------------------------------------
-%Author: TaoLiu,Fucai Zhang
+%Author: TaoLiu
 %Date: 24/2/2023
-%Note: This is the code for paper " "
-
+%Development logs
+%02/2022 finish the low overlap experiment
+%04/2022 improve image quality
+%11/2022 try different experimental parameters
+%02/2023 get stable high quality image and rewrite the whole algorithm
+%04/2023 try biological sample
+%09/2023 try votex beam
+%02/2024 propose and add scaling gradient algorithm
+%05/2024 finish data analysis for all data
 %--------------------------------------------------------------------------
 
 %%

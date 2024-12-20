@@ -1,5 +1,5 @@
 %--------------------------------------------------------------------------
-%Author: MICHAL ODSTRCIL, Tao Liu
+%Author: Tao Liu, MICHAL ODSTRCIL
 %Part of code is copied from the paper "Iterative least-squares solver for
 %generalized maximum-likelihood ptychography"
 %DOI: https://doi.org/10.1364/OE.26.003108

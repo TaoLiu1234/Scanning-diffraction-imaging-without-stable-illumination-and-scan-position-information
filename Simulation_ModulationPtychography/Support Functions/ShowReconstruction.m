@@ -1,6 +1,6 @@
 %--------------------------------------------------------------------------
-%Author: Fucai Zhang, Tao Liu
-%Date: 15/06/2015
+%Author: Tao Liu, Fucai Zhang
+%Date: 06/05/2023 15/06/2015
 %Note: call: handles      = ShowReconstruction(guess, title_string)
 % or handles         = ShowReconstruction(first_guess, second_guess, title_string)
 % show magnitude and phase of wavefront(s)

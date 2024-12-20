@@ -1,6 +1,6 @@
 %--------------------------------------------------------------------------
-%Author: Fucai Zhang
-%Date: 15/06/2015
+%Author: Tao Liu, Fucai Zhang
+%Date: 22/05/2023 15/06/2015
 %Note: usage: im_shifted = circshiftft(im, [sy sx])
 % same as circshift in Matlab
 % Shift an image by arbitrary value, e.g. pi

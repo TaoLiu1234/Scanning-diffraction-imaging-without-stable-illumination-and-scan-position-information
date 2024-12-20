@@ -1,3 +1,7 @@
+%--------------------------------------------------------------------------
+%Author: Fucai Zhang
+%Date: 30/12/2010
+%--------------------------------------------------------------------------
 function L = ThinLens(sz,dx, f)
 % usage: wf_out = PassThinLens (wf_in,px_in, f)
 % f, px are focal length and sampling interval in unit of wavelength. 
