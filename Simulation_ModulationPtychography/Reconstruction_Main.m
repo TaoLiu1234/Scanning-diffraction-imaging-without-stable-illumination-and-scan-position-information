@@ -2,8 +2,7 @@
 %Author: TaoLiu
 %Date: 24/2/2023
 %Development logs
-%02/2022 finish the low overlap experiment
-%04/2022 improve image quality
+%09/2022 improve image quality
 %11/2022 try different experimental parameters
 %02/2023 get stable high quality image and rewrite the whole algorithm
 %04/2023 try biological sample
